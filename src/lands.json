@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "location": "Irbid",
+        "area": 20,
+        "price": 300000,
+        "type": "industrial"
+    },
+    {
+        "id": 2,
+        "location": "Zarqa'a",
+        "area": 34,
+        "price": 200000,
+        "type": "farm"
+    },
+    {
+        "id": 3,
+        "location": "Amman",
+        "area": 23,
+        "price": 232000,
+        "type": "industrial"
+    },
+    {
+        "id": 4,
+        "location": "Amman",
+        "area": 60,
+        "price": 750000,
+        "type": "farm"
+    },
+    {
+        "id": 5,
+        "location": "Irbid",
+        "area": 94,
+        "price": 340000,
+        "type": "industrial"
+    },
+    {
+        "id": 6,
+        "location": "Jarash",
+        "area": 133,
+        "price": 870000,
+        "type": "industrial"
+    },
+    {
+        "id": 7,
+        "location": "Amman",
+        "area": 25,
+        "price": 450000,
+        "type": "farm"
+    },
+    {
+        "id": 8,
+        "location": "Ajloun",
+        "area": 70,
+        "price": 65000,
+        "type": "industrial"
+    },
+    {
+        "id": 9,
+        "location": "Amman",
+        "area": 50,
+        "price": 340000,
+        "type": "industrial"
+    },
+    {
+        "id": 10,
+        "location": "Amman",
+        "area": 46,
+        "price": 630000,
+        "type": "industrial"
+    },
+    {
+        "id": 11,
+        "location": "mafraq",
+        "area": 46,
+        "price": 870000,
+        "type": "industrial"
+    },
+    {
+        "id": 12,
+        "location": "madaba",
+        "area": 46,
+        "price": 440000,
+        "type": "industrial"
+    }
+]

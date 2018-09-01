@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Land Chain</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+  <div class="msg">hello</div>
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+      <ul class="nav sidebar-nav">
+        <li class="sidebar-brand">
+          <a href="#">
+            Land Chain
+          </a>
+        </li>
+        <li>
+          <a href="#" id="nav-1">See All Lands</a>
+        </li>
+        <li>
+          <a href="#" id="nav-2">Approve</a>
+        </li>
+        <li>
+          <a href="#" id="nav-3">Check Ownership </a>
+        </li>
+        <li>
+          <a href="#" id="nav-4">Transfer</a>
+        </li>
+
+        <li>
+      </ul>
+    </nav>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper" class="fadeIn">
+      <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+        <span class="hamb-top"></span>
+        <span class="hamb-middle"></span>
+        <span class="hamb-bottom"></span>
+      </button>
+      <div class="container welcome">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <h1>Welcome To
+              <span class="landchain"> Land Chain </span>App</h1>
+            <h2>Check the menu to see What you can do With Land Chain</h2>
+          </div>
+        </div>
+        <img src="http://antimatterdesign.com/wp-content/uploads/2015/10/Ethereumpic11.jpg" alt="" id="hero">
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+
+  <div class="container">
+    <div id="content-1" class="fadeIn">
+      <button class="btn btn-primary total-count mt-5">total count of lands</button>
+      <ul class="lands">
+      </ul>
+    </div>
+    <div id="content-2" class="fadeIn ">
+
+      <div class="first-form mm-5 ">
+        <h3>give the permession for someone for one land</h3>
+        <div class="form-group">
+          <label for="approve-key">paste the public key here to approve this person</label>
+          <input type="text" class="form-control" id="approve-key" placeholder="public key">
+        </div>
+        <div class="form-group">
+          <label for="approve-id">your land id:</label>
+          <input type="id" class="form-control" id="approve-id" placeholder="land ID">
+        </div>
+        <button class="btn btn-primary approve">
+          aprrove
+        </button>
+      </div>
+
+      <hr>
+
+      <div class="second-form mm-5 ">
+        <h3>or give him the permession for all your lands</h3>
+        <div class="form-group">
+          <label for="approve-all-key">paste the public key here to approve this person for all your lands</label>
+          <input type="text" class="form-control" id="approve-all-key" placeholder="public key">
+        </div>
+        <button class="btn btn-primary approve-all">
+          aprrove for all
+        </button>
+      </div>
+      <hr>
+      <div class="third-form mm-5">
+        <h3>check who has the permession for one land</h3>
+        <div class="form-group">
+          <label for="is-approved-id">put here the land id to see who has the permession for it</label>
+          <input type="text" class="form-control" id="is-approved-id" placeholder="land ID">
+        </div>
+        <button class="btn btn-primary is-approved">
+          who is approved
+        </button>
+      </div>
+      <hr>
+      <div class="fourth-form mm-5">
+        <h3>check if someone is approved for all of your lands</h3>
+        <div class="form-group">
+          <label for="is-approved-all-first">paste the public key for the person to check if he is approved for all of your lands</label>
+          <input type="text" class="form-control" id="is-approved-all-first" placeholder="owner's public key">
+        </div>
+        <div class="form-group">
+          <label for="is-approved-all-second">paste the public key for the person to check if he is approved for all of your lands</label>
+          <input type="text" class="form-control" id="is-approved-all-second" placeholder="operator's public key">
+        </div>
+        <button class="btn btn-primary is-approved-all">
+          is approved for all
+        </button>
+      </div>
+    </div>
+    <div id="content-3" class="fadeIn">
+      <div class="mm-5">
+        <h3>check how many lands someone has</h3>
+        <div class="form-group">
+          <label for="balance-key">paste the public key here to approve this person</label>
+          <input type="text" class="form-control" id="balance-key" placeholder="public key">
+        </div>
+        <button class="btn btn-primary balance-btn">
+          lands balance
+        </button>
+      </div>
+      <hr>
+
+      <div class="mm-5">
+        <h3>check if the land is exist</h3>
+        <div class="form-group">
+          <label for="exist-id">enter the land id to check if it is exist</label>
+          <input type="text" class="form-control" id="exist-id" placeholder="land ID">
+        </div>
+        <button class="btn btn-primary is-exist">
+          is land exist
+        </button>
+      </div>
+      <hr>
+
+      <div class="mm-5">
+        <h3>get the owner of land by it's ID</h3>
+        <div class="form-group">
+          <label for="owner-id">enter the land id to get it's owner</label>
+          <input type="text" class="form-control" id="owner-id" placeholder="land ID">
+        </div>
+        <button class="btn btn-primary owner-by-id">
+          Who is the owner
+        </button>
+      </div>
+      <hr>
+
+
+    </div>
+    <div id="content-4" class="fadeIn">
+      <div class="mm-5">
+        <h3>Transfer Ownership of a land from someone to someone else</h3>
+        <div class="form-group">
+          <label for="transfer-from">who is the old owner of the land</label>
+          <input type="text" class="form-control" id="transfer-from" placeholder="public key of the old owner">
+        </div>
+        <div class="form-group">
+          <label for="transfer-to">who is the new owner of the land</label>
+          <input type="text" class="form-control" id="transfer-to" placeholder="public key of the new owner">
+        </div>
+        <div class="form-group">
+          <label for="transfer-id">enter the land id to change it's owner</label>
+          <input type="text" class="form-control" id="transfer-id" placeholder="land ID">
+        </div>
+        <button class="btn btn-primary transfer-btn">
+          Transfer Ownership
+        </button>
+      </div>
+      <hr>
+
+      <div class="mm-5">
+        <h3>Transfer Ownership of a land from someone to someone else with safe Transfer</h3>
+        <div class="form-group">
+          <label for="safe-transfer-from">who is the old owner of the land</label>
+          <input type="text" class="form-control" id="safe-transfer-from" placeholder="public key of the old owner">
+        </div>
+        <div class="form-group">
+          <label for="safe-transfer-to">who is the new owner of the land</label>
+          <input type="text" class="form-control" id="safe-transfer-to" placeholder="public key of the new owner">
+        </div>
+        <div class="form-group">
+          <label for="safe-transfer-id">enter the land id to change it's owner</label>
+          <input type="text" class="form-control" id="safe-transfer-id" placeholder="land ID">
+        </div>
+        <button class="btn btn-primary safe-transfer-btn">
+          safe Transfer Ownership
+        </button>
+      </div>
+      <hr>
+    </div>
+
+  </div>
+  <!-- /#wrapper -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/web3.min.js"></script>
+  <script src="js/truffle-contract.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+
+</html>
